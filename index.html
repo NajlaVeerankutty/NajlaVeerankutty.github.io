@@ -1,6 +1,6 @@
  <!DOCTYPE html>
 
-<html>
+<!--html>
 
   <head>
 
@@ -16,7 +16,7 @@
 
   <body>
 
-    <!--a-scene>
+    <a-scene>
       
        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#0E0E0F"></a-box>
       
@@ -24,37 +24,27 @@
       
        <a-box position="1 0.75 -3" rotation="0 45 0" color="#F0145D"></a-box>
       
-       <!--a-plane position="0 0 -4" rotation="-90 90 0" width="4" height="4" color="#7BC8A4"></a-plane-->
+       <!--a-plane position="0 0 -4" rotation="-90 90 0" width="4" height="4" color="#7BC8A4"></a-p>
  
       <a-sky color="#147028"></a-sky>
 
-    </a-scene-->
+    </a-scene>
+
+  </body>
+
+</html-->
 
 
-<a-scene>
-  <a-assets>
-    <audio id="click-sound" src="audio/click.ogg"></audio>
-    <!-- Images. -->
-    <img id="city" src="img/city.jpg">
-    <img id="city-thumb" src="img/thumb-city.png">
-    <img id="cubes" src="img/cubes.jpg">
-    <img id="cubes-thumb" src="img/thumb-cubes.png">
-    <img id="sechelt" src="img/sechelt.jpg">
-    <img id="sechelt-thumb" src="img/thumb-sechelt.png">
-  </a-assets>
-  <!-- 360-degree image. -->
-  <a-sky id="image-360" radius="10" src="#city"></a-sky>
-  <!-- Link. -->
-  <a-plane class="link" height="1" width="1"></a-plane>
-  <!-- Camera + Cursor. -->
-  <a-camera>
-    <a-cursor id="cursor">
-      <a-animation begin="click" easing="ease-in" attribute="scale"
-                   fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
-      <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
-                   from="1 1 1" to="0.1 0.1 0.1" dur="1500"></a-animation>
-    </a-cursor>
-  </a-camera>
-</a-scene>  </body>
 
+<html>
+  <head>
+    <title>360° Image Browser</title>
+    <script src="lib/aframe.min.js"></script>
+    <script src="lib/k-frame.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- ... -->
+    </a-scene>
+  </body>
 </html>
